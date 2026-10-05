@@ -2,12 +2,27 @@
 
 3D-print files for the **BT5** (Black Tuque 5) event swag: a lightsaber handle shell that closes around the saber, the BT5 coin, and a few extras. The files are set up for batch printing on a Bambu Lab X1 Carbon.
 
+## Latest models for printing
+
+Use [`Assembly_v3.3mf`](Assembly_v3.3mf) / [`Assembly_v3.gcode.3mf`](Assembly_v3.gcode.3mf) for printing. Assembly v3 is composed of:
+
+- [`Bottom Fastener V5.stl`](Bottom%20Fastener%20V5.stl)
+- [`Top Fastener B v3.stl`](Top%20Fastener%20B%20v3.stl)
+- [`Bottom.stl`](Bottom.stl) (handle body bottom half)
+- [`Top.stl`](Top.stl) (handle body top half)
+
+| File | Type |
+|---|---|
+| [`Assembly_v3.3mf`](Assembly_v3.3mf) | Project (editable / re-slice) |
+| [`Assembly_v3.gcode.3mf`](Assembly_v3.gcode.3mf) | Sliced, ready for X1 Carbon |
+
 <p align="center">
   <img src="docs/images/full-handle-assembly-v2.png" width="360" alt="One handle set: two-piece handle body, top fastener and bottom fastener">
 </p>
 
 ## Contents
 
+- [Latest models for printing](#latest-models-for-printing)
 - [What's in a handle](#whats-in-a-handle)
 - [Printing a batch](#printing-a-batch)
 - [Assembly](#assembly)
@@ -23,8 +38,8 @@ Each handle is four printed parts:
 
 | Qty | Part | What it is |
 |---|---|---|
-| 1 | `Male_Top` | One half of the handle body |
-| 1 | `Female_Bottom` | The other half of the handle body; mates with `Male_Top` |
+| 1 | `Top` | One half of the handle body |
+| 1 | `Bottom` | The other half of the handle body; mates with `Top` |
 | 1 | Top fastener | Threaded ring with a shroud that screws onto the top of the closed body |
 | 1 | Bottom fastener | Threaded ring that screws onto the bottom of the closed body |
 
@@ -44,7 +59,7 @@ One plate of each fastener covers about four handle plates. A complete handle us
 
 ## Assembly
 
-1. Put the two halves of the handle body (`Male_Top` and `Female_Bottom`) together over the saber, lining the handle up with the saber's screen.
+1. Put the two halves of the handle body (`Top` and `Bottom`) together over the saber, lining the handle up with the saber's screen.
 2. Screw the top fastener onto the top of the handle.
 3. Screw the bottom fastener onto the bottom of the handle.
 
@@ -62,7 +77,8 @@ The fasteners are threaded and hold the two halves closed.
 | [`6_handle_plate_v3.gcode.3mf`](6_handle_plate_v3.gcode.3mf) | v3 (current) | Sliced | Same plate, sliced: 9 h 49 m, 235 g |
 | [`6_handle_plate.3mf`](6_handle_plate.3mf) | v2 (older) | Project | 12 handle bodies across 2 plates (`Male_Top_v2` + `Female_Bottom_v2`) |
 | [`6_handle_plate.gcode.3mf`](6_handle_plate.gcode.3mf) | v2 (older) | Sliced | 6 v2 handle bodies: 10 h 31 m, 261 g |
-| [`Female_Bottom v3.stl`](Female_Bottom%20v3.stl) | v3 (current) | Mesh | The `Female_Bottom` half on its own |
+| [`Bottom.stl`](Bottom.stl) | v3 (current) | Mesh | The handle body bottom half on its own |
+| [`Top.stl`](Top.stl) | v3 (current) | Mesh | The handle body top half on its own |
 
 ### Fasteners
 
@@ -75,17 +91,22 @@ The fasteners are threaded and hold the two halves closed.
 | [`25_top_fastener_plate.3mf`](25_top_fastener_plate.3mf) | v3 (current) | Project | 25 × `Top Fastener B v3` |
 | [`25_top_fastener_plate.gcode.3mf`](25_top_fastener_plate.gcode.3mf) | v3 (current) | Sliced | Same plate, sliced: 4 h 42 m, 107 g |
 | [`25_bottom_fastener_plate_v4.gcode.3mf`](25_bottom_fastener_plate_v4.gcode.3mf) | v4 (current) | Sliced | 25 × `Bottom Fastener v4`: 5 h 00 m, 101 g |
+| [`Bottom Fastener V5.stl`](Bottom%20Fastener%20V5.stl) | v5 (current) | Mesh | Single bottom fastener |
+| [`Top Fastener B v3.stl`](Top%20Fastener%20B%20v3.stl) | v3 (current) | Mesh | Single top fastener B |
+| [`Top Fastener Z v1.stl`](Top%20Fastener%20Z%20v1.stl) | v1 | Mesh | Alternate top fastener Z |
 | [`Bottom Fastener v3.stl`](Bottom%20Fastener%20v3.stl) | v3 (older) | Mesh | Single bottom fastener |
 | [`30_bottom_fastener_plate.3mf`](30_bottom_fastener_plate.3mf) | v2 (older) | Project | 30 × `Bottom Fastener v2`, needs supports |
 | [`30_bottom_fastener_plate.gcode.3mf`](30_bottom_fastener_plate.gcode.3mf) | v2 (older) | Sliced | Same plate, sliced: 8 h 29 m, 196 g |
 
 ### Single-handle projects
 
-Useful for a one-off print or for seeing how the parts relate. Both hold older versions of the parts.
+Useful for a one-off print or for seeing how the parts relate.
 
 | | File | Version | Contents |
 |---|---|---|---|
-| <img src="docs/images/full-handle-assembly-v2.png" width="140" alt="Full handle assembly v2"> | [`FullHandleAssembly_v2.3mf`](FullHandleAssembly_v2.3mf) | v2 | One complete set: handle body, `Top Fastener B v2`, `Bottom Fastener` |
+| | [`Assembly_v3.3mf`](Assembly_v3.3mf) | **v3 (latest)** | One complete set for printing: handle body, top fastener, bottom fastener |
+| | [`Assembly_v3.gcode.3mf`](Assembly_v3.gcode.3mf) | **v3 (latest)** | Same set, sliced for X1 Carbon |
+| <img src="docs/images/full-handle-assembly-v2.png" width="140" alt="Full handle assembly v2"> | [`FullHandleAssembly_v2.3mf`](FullHandleAssembly_v2.3mf) | v2 (older) | One complete set: handle body, `Top Fastener B v2`, `Bottom Fastener` |
 | <img src="docs/images/saber-handle-v1.png" width="140" alt="Original saber handle parts"> | [`Saber_Handle.3mf`](Saber_Handle.3mf) | v1 (original) | The first design as five separate parts: `male_top`, `female_bottom`, `bottom_fastener`, `top_fastener_a`, `top_fastener_b` |
 
 ### Extras
@@ -126,8 +147,7 @@ The extras (coin, droid tags, disc, stand) are set up with PLA filaments; check 
 
 ## Known gaps
 
-- `Bottom Fastener v4` exists only as the sliced plate. There is no editable project or STL for it; the newest editable bottom fastener is [`Bottom Fastener v3.stl`](Bottom%20Fastener%20v3.stl).
-- `Male_Top v3` and `Top Fastener B v3` have no standalone STL. They are inside [`6_handle_plate_v3.3mf`](6_handle_plate_v3.3mf) and [`25_top_fastener_plate.3mf`](25_top_fastener_plate.3mf) and can be exported from Bambu Studio.
+- `Bottom Fastener v4` exists only as the sliced plate. The newest standalone bottom fastener mesh is [`Bottom Fastener V5.stl`](Bottom%20Fastener%20V5.stl).
 
 ## License
 
